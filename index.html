@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOSS digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "moss-green": '#0F806F',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: 'NoirPro';
+      src: url('/fonts/NoirPro-Regular.eot');
+      src: url('/fonts/NoirPro-Regular.eot?#iefix') format('embedded-opentype'),
+           url('/fonts/NoirPro-Regular.woff2') format('woff2'),
+           url('/fonts/NoirPro-Regular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'NoirProHeavy';
+      src: url('/fonts/NoirPro-Heavy.eot');
+      src: url('/fonts/NoirPro-Heavy.eot?#iefix') format('embedded-opentype'),
+           url('/fonts/NoirPro-Heavy.woff2') format('woff2'),
+           url('/fonts/NoirPro-Heavy.woff') format('woff');
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        visibility: hidden;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes wiggle {
+      0%, 7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-15deg);
+      }
+      20% {
+        transform: rotateZ(10deg);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+      }
+      30% {
+        transform: rotateZ(6deg);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
+    }
+    body {
+      font-family: 'NoirPro', sans-serif;
+      background-image: url('/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #0F806F;
+      background-blend-mode: multiply;
+    }
+    #logo {
+      font-family: 'NoirProHeavy', sans-serif;
+    }
+
+    #tablist h1 {
+      cursor: pointer;
+    }
+    #tablist h1 a {
+      display: block;
+      padding: 1rem .5rem;
+    }
+    #tablist p {
+      padding-left: 2rem;
+    }
+    #tablist h1 + p {
+      height: 0;
+      opacity: 0;
+      margin: 0;
+    }
+    #tablist h1:target + p {
+      height: auto;
+      margin: 1rem 0;
+      animation: fadeIn 0.3s ease-in forwards;
+    }
+
+    #get-in-touch {
+      transform-origin: 50% 2em;
+      animation: 1.5s wiggle 4s linear infinite alternate-reverse;
+    }
+  </style>
+</head>
+<body class="text-white h-full">
+  <div class="flex flex-col h-screen justify-between">
+    <header class="py-6 px-8 flex justify-end">
+      <div id="logo" class="text-6xl font-bolder"><a href="#moss">MOSS</a></div>
+    </header>
+
+    <main class="container mx-auto flex-grow flex">
+
+      <div id="tablist">
+        <h1 id="good-companies-matter" class="w-full text-3xl select-none">
+          <a href="#good-companies-matter">Good companies matter</a>
+        </h1>
+        <p class="text-xl">
+          There is a new generation of companies, with planet-positive missions.
+          They will a dent in history. Moss exists to support them.
+        </p>
+        <h1 id="robin-hood" class="w-full text-3xl select-none">
+          <a href="#robin-hood">Robin Hood</a>
+        </h1>
+        <p class="text-xl">
+          We transfer knowledge to do good.
+          You receive the same level of expertise as our enterprise clients.
+        </p>
+        <h1 id="help-yourself" class="w-full text-3xl select-none">
+          <a href="#help-yourself">Help yourself</a>
+        </h1>
+        <p class="text-xl">
+          There is a new generation of companies, with planet-positive missions.
+          They will put a dent in history. Moss exists to support them.
+        </p>
+        <h1 id="david-vs-goliath" class="w-full text-3xl select-none">
+          <a href="#david-vs-goliath">David vs. Goliath</a>
+        </h1>
+        <p class="text-xl">
+          There is a new generation of companies, with planet-positive missions.<br>
+          They will a dent in history. Moss exists to support them.
+        </p>
+        <h1 id="reaching-full-potential" class="w-full text-3xl select-none">
+          <a href="#reaching-full-potential">Reaching full potential</a>
+        </h1>
+        <p class="text-xl">
+          Advancing your idea, company and career to its fullest.<br>
+          We uncover blind spots and help you grow into the market.
+        </p>
+        <h1 id="fractional-leadership" class="w-full text-3xl select-none">
+          <a href="#fractional-leadership">Fractional Leaderhip</a>
+        </h1>
+        <p class="text-xl">
+          Invite help into your company, tackle specific problems and transformations with industry veterans at your side.
+        </p>
+        <h1 id="why-moss" class="w-full text-3xl select-none">
+          <a href="#why-moss">Why Moss?</a>
+        </h1>
+        <p class="text-xl">
+          There is a new generation of companies, with planet-positive missions.<br>
+          They will a dent in history. Moss exists to support them.
+        </p>
+      </div>
+
+    </main>
+
+    <footer class="py-6 px-8 flex justify-end">
+      <a id="get-in-touch" class="block px-4 py-3 bg-white rounded-full text-black text-xl" href="https://linkedin.com" target="_blank">Get in touch</a>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
+  <script>
+  </script>
+</body>
+</html>
+
