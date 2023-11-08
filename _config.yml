@@ -1,0 +1,28 @@
+title: MOSS digital
+email: hello@moss.digital
+description: >-
+  At Moss digital, our mission is to realize the full potential of companies and startups committed to positive ecological and social impact.
+  We exclusively advise clients whose values are reflected in sustainable practices, socially responsible initiatives, or environmentally beneficial products and services.
+baseurl: ""
+url: "https://moss.digital"
+collections:
+- statements
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
