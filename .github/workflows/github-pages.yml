@@ -1,4 +1,6 @@
 name: Build and deploy this site to GitHub Pages
+permissions:
+  contents: write
 
 on:
   push:
