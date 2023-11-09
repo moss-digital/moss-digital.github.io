@@ -1,3 +1,3 @@
 default:
-	bundle exec jekyll --livereload
+	bundle exec jekyll serve --livereload
 
