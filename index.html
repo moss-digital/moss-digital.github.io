@@ -1,22 +1,125 @@
----
-layout: default
-title: MOSS digital
----
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOSS digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "moss-green": '#0F806F',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/main.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body class="text-white h-full">
+  <div class="h-full flex flex-col">
+    <header class="sticky top-0 py-3 sm:py-6 px-4 sm:px-8 flex justify-between items-center gap-8">
+      <div id="contact"><a id="get-in-touch" class="inline-block px-4 py-3 sm:px-5 sm:py-4 sm:text-2xl bg-white rounded-full text-black whitespace-nowrap" href="https://linktr.ee/mossdigital">Get in touch</a></div>
+      <div id="logo" class="text-5xl sm:text-6xl font-bolder"><a href="/#moss">MOSS</a></div>
+    </header>
 
-<div id="tablist" class="h-full flex flex-col flex-grow justify-between">
-  <a href="#{{ site.statements[0].slug }}" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+    <main id="moss" class="container relative flex-grow px-4 sm:px-8 py-20 mx-auto">
+      <div id="tablist" class="h-full flex flex-col flex-grow justify-between">
+  <a href="#good-companies-matter" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
 
-  {% for statement in site.statements %}
-    <div id="{{ statement.slug }}">
+  
+    <div id="good-companies-matter">
       <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
-        <a href="#{{ statement.slug }}" class="block">{{ statement.title }}</a>
+        <a href="#good-companies-matter" class="block">Good companies matter</a>
       </h1>
       <div class="text-xl">
-        {{ statement.content }}
+        <p>This is the time of a new generation of companies, with planet-positive values and missions.
+We support them to make a dent in history.
+Read about <a href="/pages/mission-vision.html">our mission &amp; vision</a>.</p>
+
       </div>
     </div>
-    {% assign next = forloop.index0 | plus: 1 | modulo: forloop.length %}
-    <a href="#{{ site.statements[next].slug }}" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
-  {% endfor %}
+    
+    <a href="#help-yourself" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
+    <div id="help-yourself">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+        <a href="#help-yourself" class="block">Help yourself</a>
+      </h1>
+      <div class="text-xl">
+        <p>The best kind of help is the one you just briefly need to get things going.
+In conjunction with our advice and solutions, we permanently transfer knowledge and skill.
+From Management to Product Managers and Developers - our network of senior mentors is available to upskill your team.</p>
+
+
+      </div>
+    </div>
+    
+    <a href="#realize-your-full-potential" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
+    <div id="realize-your-full-potential">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+        <a href="#realize-your-full-potential" class="block">Realize your full potential</a>
+      </h1>
+      <div class="text-xl">
+        <p>Moss is all about giving you a boost. That could mean getting your organization ready to scale up resiliently. Or to develop a winning strategy against big, well-funded competitors. Sometimes it means tapping into new, digital revenue streams. Or you might have a specific challenge you would like hands-on help with. In either case, we’re here to chat - feel free to book an <a href="https://linktr.ee/mossdigital">exploratory call</a> with us.</p>
+
+      </div>
+    </div>
+    
+    <a href="#robin-hood" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
+    <div id="robin-hood">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+        <a href="#robin-hood" class="block">Robin Hood</a>
+      </h1>
+      <div class="text-xl">
+        <p>As <a href="/pages/industry-veterans.html">industry veterans</a>, we’ve accumulated invaluable know-how, best-practices and tools.
+The type that can make a difference between a thriving and a faltering organization. 
+It’s time to use them for a good cause.</p>
+
+
+      </div>
+    </div>
+    
+    <a href="#we-are-systemic" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
+    <div id="we-are-systemic">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+        <a href="#we-are-systemic" class="block">We are systemic</a>
+      </h1>
+      <div class="text-xl">
+        <p>We don’t believe in just optimizing an isolated part of an organization. In a successful business, everything is closely interlinked: Marketing strategy with pricing strategy with product strategy with development practices with recruiting strategy with company culture. That’s why we come in as a team with the right experts covering all of the above facets of an organization. We offer a holistic approach to help you transform your advantage into healthy growth.</p>
+
+
+      </div>
+    </div>
+    
+    <a href="#why-moss" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
+    <div id="why-moss">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+        <a href="#why-moss" class="block">Why Moss</a>
+      </h1>
+      <div class="text-xl">
+        <p>Like Moss, we are resilient, adaptive and symbiotic.
+We enable organisms (organizations) to thrive and grow.</p>
+
+<p>Our partners are not as ancient as moss, but did manage to gather a lot of valuable tools and learnings in <a href="/">a few areas of expertise</a>. We are on a mission to seed them into planet-positive projects.</p>
+
+
+      </div>
+    </div>
+    
+    <a href="#good-companies-matter" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+  
 </div>
+
+
+    </main>
+  </div>
+</body>
+</html>
 
