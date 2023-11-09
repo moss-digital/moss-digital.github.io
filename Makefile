@@ -1,2 +1,3 @@
 default:
-	caddy file-server --listen :4000
+	bundle exec jekyll serve --livereload
+
