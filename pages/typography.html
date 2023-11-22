@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "moss-green": '#0F806F',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/main.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body class="text-white">
+  <div class="flex flex-col h-screen overflow-hidden">
+    <header class="w-full z-10 pt-3 sm:pt-6 px-4 sm:px-8 flex justify-between items-center gap-8">
+      <div id="contact"><a id="get-in-touch" class="inline-block px-4 py-3 sm:px-5 sm:py-4 sm:text-2xl bg-white rounded-full text-black whitespace-nowrap" href="https://linktr.ee/mossdigital">Get in touch</a></div>
+      <div id="logo" class="text-5xl sm:text-6xl font-bolder"><a href="/#moss">MOSS</a></div>
+    </header>
+    <main id="moss" class="flex-1 overflow-y-scroll container relative px-4 sm:px-8 mx-auto">
+      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+  Typography
+</h1>
+<div class="text-xl">
+  <p>Markdown uses headings to organize text and create a hierarchy of information.</p>
+
+<h2 id="heading-levels">Heading Levels</h2>
+
+<p>There are three levels of headings in markdown:</p>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<p><code class="language-plaintext highlighter-rouge"># Heading 1</code> This is the largest and most important heading.</p>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<p><code class="language-plaintext highlighter-rouge">## Heading 2</code> This is a secondary heading that comes below the main heading.</p>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<p><code class="language-plaintext highlighter-rouge">### Heading 3</code> This is a tertiary heading that comes below both the main and secondary headings.</p>
+
+<h1 id="other-elements-in-markdown">Other Elements in Markdown</h1>
+
+<p>Markdown uses various typographic elements to format text and create a visually appealing document.</p>
+
+<h2 id="bold-text">Bold Text</h2>
+
+<p><strong>This text is bold using double asterisks.</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**This text is bold
+using double asterisks.**
+</code></pre></div></div>
+
+<h2 id="italic-text">Italic Text</h2>
+
+<p>You can make text italic using underscores (<code class="language-plaintext highlighter-rouge">_</code>). For example:</p>
+
+<p><em>This text is italic using underscores.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_This text is italic
+using underscores._
+</code></pre></div></div>
+
+<h2 id="strikethrough-text">Strikethrough Text</h2>
+
+<p>You can make text strikethrough using two horizontal lines (<code class="language-plaintext highlighter-rouge">~~</code>). For example:</p>
+
+<p><del>This text is strikethrough using two tilde.</del></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~This text is strikethrough
+using two tilde.~~
+</code></pre></div></div>
+
+
+</div>
+<a href="/#moss" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+
+
+    </main>
+    <footer id="footer" class="w-full pt-6 sm:pt-9 pb-6 sm:pb-9 px-4 sm:px-8 text-sm text-slate-400">
+      (c) <script>document.write((new Date()).getFullYear())</script> MOSS digital, <a href="/pages/imprint.html">Terms &amp; Legal</a>
+    </footer>
+  </div>
+</body>
+</html>
+
