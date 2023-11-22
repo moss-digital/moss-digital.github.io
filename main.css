@@ -55,6 +55,28 @@
   }
 }
 
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: 'NoirPro', sans-serif;
 }
@@ -73,33 +95,43 @@ body {
   main p {
     @apply mb-5;
   }
-  main a:not([class]) {
+  main a:not([class]),
+  footer a:not([class]) {
     @apply underline;
   }
+  h1:not([class]) {
+    @apply text-3xl font-medium my-5;
+  }
+  h2:not([class]) {
+    @apply text-2xl font-medium my-3;
+  }
+  h3:not([class]) {
+    @apply text-xl font-medium my-2;
+  }
+  p > code, pre {
+    @apply rounded bg-black/50 text-white px-1;
+  }
+}
+
+.slide-in-top {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slide-in-top;
+}
+
+.slide-in-bottom {
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slide-in-bottom;
 }
 
 #logo {
   font-family: 'NoirProHeavy', sans-serif;
 }
-
-#tablist h1 + div {
-  display: none;
-  opacity: 0;
-  margin: 0;
-}
-#tablist > div + a {
-  display: none;
-  opacity: 0;
-}
-#tablist > :target h1 + div {
-  display: block;
-  animation: fadeIn 0.3s ease-in forwards;
-}
-#tablist > :target + a {
-  display: inline-block;
-  opacity: 1;
-}
-
 #get-in-touch {
   transform-origin: 50% 2em;
   animation: 1.5s wiggle 4s linear;

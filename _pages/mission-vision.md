@@ -1,6 +1,6 @@
 ---
-layout: subpage
 title: Mission & Vision
+layout: subpage
 ---
 
 At Moss digital, our mission is to realize the full potential of companies and startups committed to positive ecological and social impact. We exclusively advise clients whose values are reflected in sustainable practices, socially responsible initiatives, or environmentally beneficial products and services.

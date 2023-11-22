@@ -1,5 +1,6 @@
 ---
 title: Why Moss
+layout: statement
 ---
 
 Like Moss, we are resilient, adaptive and symbiotic.

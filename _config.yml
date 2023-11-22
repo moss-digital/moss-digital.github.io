@@ -6,7 +6,8 @@ description: >-
 baseurl: ""
 url: "https://moss.digital"
 collections:
-  statements: {}
+  statements:
+    output: true
   pages:
     output: true
 plugins:

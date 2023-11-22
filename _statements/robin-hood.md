@@ -1,5 +1,6 @@
 ---
 title: Robin Hood
+layout: statement
 ---
 
 As [industry veterans](/pages/industry-veterans.html), we’ve accumulated invaluable know-how, best-practices and tools.

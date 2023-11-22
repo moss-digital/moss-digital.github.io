@@ -3,20 +3,13 @@ layout: default
 title: MOSS digital
 ---
 
-<div id="tablist" class="h-full flex flex-col flex-grow justify-between">
-  <a href="#{{ site.statements[0].slug }}" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+<div class="h-full flex flex-col flex-grow justify-between">
+  <a href="{{ site.statements[0].url }}" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
 
   {% for statement in site.statements %}
-    <div id="{{ statement.slug }}">
-      <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
-        <a href="#{{ statement.slug }}" class="block">{{ statement.title }}</a>
-      </h1>
-      <div class="text-xl">
-        {{ statement.content }}
-      </div>
-    </div>
-    {% assign next = forloop.index0 | plus: 1 | modulo: forloop.length %}
-    <a href="#{{ site.statements[next].slug }}" class="fixed bottom-3 sm:bottom-6 right-4 sm:right-8 px-4 py-3 bg-white rounded-full text-black text-xl"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"></path></svg></a>
+    <h1 class="w-full py-4 sm:py-8 text-3xl select-none">
+      <a href="{{ statement.url }}" class="block">{{ statement.title }}</a>
+    </h1>
   {% endfor %}
 </div>
 

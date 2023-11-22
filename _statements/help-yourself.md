@@ -1,5 +1,6 @@
 ---
 title: Help yourself
+layout: statement
 ---
 
 The best kind of help is the one you just briefly need to get things going.
