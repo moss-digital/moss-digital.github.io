@@ -74,7 +74,6 @@ main {
   font-size: 24px;
   font-weight: 500; /* Medium */
   margin-bottom: 10px;
-  opacity: 0.75;
   cursor: pointer;
   transition: opacity 0.3s;
 }
@@ -133,7 +132,9 @@ footer {
   cursor: pointer;
   transition: opacity 0.3s;
 }
-
+.footer-links li:hover {
+  opacity: 1;
+}
 .contact-button button {
   background-color: white;
   color: #00796b;
@@ -208,6 +209,7 @@ header {
   border: none;
   color: #fff;
   font-size: 30px;
+  padding: 0;
 }
 .mobile-menu {
   position: absolute;
@@ -277,6 +279,21 @@ header.mobile-menu-active .logo h1 {
   color: #000;
 }
 
+.main-menu .accordion-item.active .menu-item,
+.main-menu .accordion-item.active .submenu {
+  color: #fff;
+  opacity: 1;
+}
+.main-menu .accordion-item .menu-item,
+.main-menu .accordion-item .submenu {
+  opacity: 0.75;
+}
+.main-menu .accordion-item .menu-item:hover {
+  opacity: 1;
+}
+.submenu p a {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .next-button {
     display: none;
@@ -308,5 +325,15 @@ header.mobile-menu-active .logo h1 {
   }
   footer nav {
     display: none;
+  }
+
+  header .back-page-btn {
+    display: none;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 }
