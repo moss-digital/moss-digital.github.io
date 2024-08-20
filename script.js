@@ -1,32 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuItems = document.querySelectorAll('.main-menu .menu-item');
-    const submenus = document.querySelectorAll('.submenu');
-    const footerLinks = document.querySelectorAll('.footer-links li a');
-
-    menuItems.forEach(item => {
-        item.addEventListener('mouseover', function () {
-            item.style.opacity = '1';
-        });
-
-        item.addEventListener('mouseout', function () {
-            if (!item.parentElement.classList.contains('active')) {
-                item.style.opacity = '0.75';
-            }
-        });
-    });
-
-    footerLinks.forEach(link => {
-        link.addEventListener('mouseover', function () {
-            link.style.opacity = '1';
-        });
-
-        link.addEventListener('mouseout', function () {
-            link.style.opacity = '0.75';
-        });
-    });
-
-});
-
 // open accordion items
 document.addEventListener('DOMContentLoaded', function () {
     const nextButton = document.querySelector('.next-btn');
@@ -35,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function hideAllContents() {
         accordionItems.forEach(item => {
-            item.querySelector('.submenu').classList.remove('active');
+            item.classList.remove('active');
         });
     }
 
@@ -43,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         hideAllContents();
 
         if (currentIndex < accordionItems.length) {
-            accordionItems[currentIndex].querySelector('.submenu').classList.add('active');
+            accordionItems[currentIndex].classList.add('active');
             currentIndex++;
         }
 
@@ -53,14 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     accordionItems.forEach((item, index) => {
-        item.querySelector('.menu-item').addEventListener('click', function () {
-            const content = item.querySelector('.submenu');
-
-            if (content.classList.contains('active')) {
-                content.classList.remove('active');
+        item.addEventListener('click', function () {
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
             } else {
                 hideAllContents();
-                content.classList.add('active');
+                item.classList.add('active');
                 currentIndex = index + 1;
             }
         });
