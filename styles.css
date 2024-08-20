@@ -114,7 +114,7 @@ footer {
 
 .footer-links {
   display: flex;
-  margin-left: 50px; /* Align with main menu */
+  margin-left: 30px; /* Align with main menu */
   gap: 20px;
 }
 
@@ -293,6 +293,35 @@ header.mobile-menu-active .logo h1 {
 }
 .submenu p a {
   text-decoration: underline;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  }
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00796b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 11px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f2f2f2;
 }
 @media (min-width: 768px) {
   .next-button {
