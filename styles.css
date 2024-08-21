@@ -323,6 +323,12 @@ header.mobile-menu-active .logo h1 {
 ::-webkit-scrollbar-thumb:hover {
   background: #f2f2f2;
 }
+
+.next-button button:focus,
+.contact-button button:focus,
+.back-page-btn:focus {
+  background-color: #fff;
+}
 @media (min-width: 768px) {
   .next-button {
     display: none;
